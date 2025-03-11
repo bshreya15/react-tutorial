@@ -15,12 +15,21 @@ const Content = () => {
     const handleClick2 = (name) => {
         alert(`${name} clicked the button!`);
     }
+    
+    const handleClick3 = (e) => {
+        console.log(e);
+        console.log(e.target);
+        console.log(e.target.innerText);
+    }
 
   return (
     <main className="content">
         {/* call the handleNameChange once, only when page loads */}
         {/* therefore, () after function name */}
         <p>Hello {handleNameChange()}!</p>
+        
+        {/* func call on double click */}
+        <p onDoubleClick={handleClick}>Hello! {handleNameChange()}!</p>
 
         {/* pass the ref to the handleClick func ie no () after func name */}
         {/* func will be called whenever button is clicked */}
@@ -34,6 +43,9 @@ const Content = () => {
 
         {/* Anonymous func with function parameter passed in onClick  */}
         <button onClick={() => {handleClick2(handleNameChange())}}>Click me 3!</button>
+
+        {/* event obj onClick */}
+        <button onClick={(e) => {handleClick3(e)}}>Click me 4!</button>
     </main>
   )
 }
