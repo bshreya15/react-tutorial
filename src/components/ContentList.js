@@ -26,7 +26,9 @@ const ContentList = () => {
     // alert(`key: ${id}`)
 
     const listItems = items.map((item) =>
-      item.id === id ? { ...item, checked: !item.checked } : item
+      item.id === id ? 
+        { ...item, checked: !item.checked } : 
+        item
     );
 
     setItems(listItems);
@@ -70,6 +72,7 @@ const ContentList = () => {
               {/* <button>Delete</button> */}
               <FaTrashAlt
                 role="button"
+                style={{height:16}}
                 tabIndex="0"
                 onClick={() => {
                   handleDelete(item.id);
