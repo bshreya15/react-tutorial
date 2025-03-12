@@ -57,3 +57,18 @@ footer {
   display: grid;
   place-content: center;
 }
+
+.btn-counter{
+  margin: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  font-size: large;
+  
+  button{
+    height: 2rem;
+    width: 4rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const Content = () => {
+const ContentState = () => {
     // Array destructuring
     // name is the current state value
     // setName is the function that updates the state value
@@ -35,7 +35,7 @@ const Content = () => {
     }
 
   return (
-    <main className="content">
+    <main className="content1">
         {/* call the handleNameChange once, only when page loads */}
         {/* therefore, () after function name */}
         <p>Hello {handleNameChange()}!</p>
@@ -67,4 +67,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default ContentState

@@ -1,12 +1,14 @@
 import Header from "./components/Header";
-import Content from "./components/Content";
+// import ContentState from "./components/ContentState";
+import ContentCounter from "./components/ContentCounter";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Content/>
+      {/* <ContentState/> */}
+      <ContentCounter/>
       <Footer/>
     </div>
   );
